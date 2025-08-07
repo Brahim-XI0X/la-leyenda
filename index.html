@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La leyenda</title>
     <link rel="stylesheet" href="csslal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 <body>
@@ -90,33 +91,33 @@ Whether you're catching up with friends, working on your next idea, or simply ta
             <div class="section-content">
                 <ul class="menu-list">
                     <li class="menu-item">
-                        <img src="frapcaram.png" alt="" class="menu-image">
+                        <img src="frapcaram.png" alt="" class="menu-image" data-aos="slide-left">
                         <h3 class="name">FRAPPUCCINO 
                            <br> caramel</h3>
                         <p class="text">description</p>
                     </li>
                      <li class="menu-item">
-                        <img src="frapchko.png" alt="" class="menu-image">
+                        <img src="frapchko.png" alt="" class="menu-image" data-aos="slide-left">
                         <h3 class="name">FRAPPUCCINO <br> dark chocolat</h3>
                         <p class="text">description</p>
                     </li>
                      <li class="menu-item">
-                        <img src="frappyst.png" alt="" class="menu-image">
+                        <img src="frappyst.png" alt="" class="menu-image" data-aos="slide-left">
                         <h3 class="name">FRAPPUCCINO <br> pystache</h3>
                         <p class="text">description</p>
                     </li>
                      <li class="menu-item">
-                        <img src="7low.png" alt="" class="menu-image">
+                        <img src="7low.png" alt="" class="menu-image" data-aos="slide-left">
                         <h3 class="name">PanCake</h3>
                         <p class="text">description</p>
                     </li>
                      <li class="menu-item">
-                        <img src="mel.png" alt="" class="menu-image">
+                        <img src="mel.png" alt="" class="menu-image" data-aos="slide-left">
                         <h3 class="name">Falafel 7oms</h3>
                         <p class="text">description</p>
                     </li>
                      <li class="menu-item">
-                        <img src="7low2.png" alt="" class="menu-image">
+                        <img src="7low2.png" alt="" class="menu-image" data-aos="slide-left">
                         <h3 class="name">Gateau <br> Pro max</h3>
                         <p class="text">description</p>
                     </li>
@@ -168,16 +169,16 @@ Whether you're catching up with friends, working on your next idea, or simply ta
             <div class="section-content">
                 <ul class="gallery-list">
                     <li class="gallery-item">
-                        <img src="g1.png" alt="">
+                        <img src="g1.png" alt="" data-aos="fade-up">
                     </li>
                     <li class="gallery-item">
-                        <img src="g2.png" alt="">
+                        <img src="g2.png" alt="" data-aos="fade-up">
                     </li>
                     <li class="gallery-item">
-                        <img src="g3.png" alt="">
+                        <img src="g3.png" alt="" data-aos="fade-up">
                     </li>
                     <li class="gallery-item">
-                        <img src="g4.png" alt="">
+                        <img src="g4.png" alt="" data-aos="fade-up">
                     </li>
                 </ul>
             </div>
@@ -235,7 +236,13 @@ Whether you're catching up with friends, working on your next idea, or simply ta
              </footer>
     </main>
 
-      
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // مدة الأنيميشن بالمللي ثانية
+    once: true      // التشغيل مرة واحدة فقط عند التمرير
+  });
+</script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="jslal.js"></script>
 </body>
