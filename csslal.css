@@ -440,10 +440,6 @@ html{
 
 }
 
-.menu-image:hover{
-    box-shadow:1px 2px 3px #ccb16c;
-    transform: translateY(-15px);
-}
 
 .testimonials-section{
     padding: 50px 0 100px;
@@ -664,6 +660,67 @@ html{
 .menu-item .name{
     font-family: cursive;
     color: #ccb16c;
+}
+.menu-image:hover{
+    transform: scale(1,5px);
+    box-shadow:1px 2px 2px #ccb16c;
+    
+}
+/* From Uiverse.io by nikk7007 */ 
+.btn {
+ --color: #ccb16c;
+ --color2: #ccb16c;
+ padding: 0.8em 1.75em;
+ background-color: transparent;
+ border-radius: 6px;
+ border: .3px solid var(--color);
+ transition: .5s;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ z-index: 1;
+ font-weight: 300;
+ font-size: 17px;
+ font-family: 'Roboto', 'Segoe UI', sans-serif;
+ text-transform: uppercase;
+ color: #ccb16c;
+}
+
+.btn::after, .btn::before {
+ content: '';
+ display: block;
+ height: 100%;
+ width: 100%;
+ transform: skew(90deg) translate(-50%, -50%);
+ position: absolute;
+ inset: 50%;
+ left: 25%;
+ z-index: -1;
+ transition: .5s ease-out;
+ background-color: #ccb16c;
+}
+
+.btn::before {
+ top: -50%;
+ left: -25%;
+ transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::before {
+ transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btn:hover::after {
+ transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btn:hover {
+ color: #fff;
+}
+
+.btn:active {
+ filter: brightness(.7);
+ transform: scale(.98);
 }
 
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment - La Leyenda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="csslal.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f3ef;
+      padding: 40px;
+    }
+    .payment-form {
+      max-width: 500px;
+      margin: auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    .payment-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .submit-button {
+      width: 100%;
+      background-color: #c49a6c;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .submit-button:hover {
+      background-color: #a67c52;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="payment-form">
+    <h2>Payment Information</h2>
+    <form action="#" method="post">
+      <input type="text" class="form-input" placeholder="Full Name" required>
+      <input type="text" class="form-input" placeholder="Number Phone" required>
+      <input type="text" class="form-input" placeholder="Date (MM/YY)" required>
+      <button class="submit-button" type="submit">Pay Now</button>
+    </form>
+  </div>
+
+</body>
+</html>
