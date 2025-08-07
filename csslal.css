@@ -1017,8 +1017,37 @@ html{
 .radio input:checked ~ label svg {
   fill: #c49a6c;
 }
-
-
+.nav-logo .logop{
+  height: auto;
+  width: 50px;
+  transform: translateY(-1px);
+  transform: translateX(-8px);
+}
+.hero-details .title{
+  text-shadow:3px 3px 3px #000;
+  transform: translatex(-145px);
+  text-align: center;
+}
+.hero-details .subtitle{
+  text-shadow:3px 3px 3px #000;
+  text-align: center;
+}
+.hero-details .description{
+  text-shadow:3px 3px 3px #000;
+  text-align: center;
+}
+.hero-details .buttons{
+  transform: translatex(150px);
+  text-align: center;
+}
+.nav-logo .logo-text{
+  color: #ccb16c;
+  text-align: center;
+  font-size: 25px;
+}
+.hero-image{
+  padding-left: 70px;
+}
 
 
 
@@ -1190,6 +1219,7 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
   }
   /*meeee*/
   .section-content .gallery-item .contact-section .contact-form{
@@ -1262,5 +1292,24 @@ html{
     align-items: center;
     grid-template-columns: 1fr; /* صورة واحدة في كل صف */
   }
-  
+  .nav-logo .logo-text{
+    font-size: 0px;
+  }
+  .nav-logo .logop{
+    transform: translatex(135px);
+    height: auto;
+    width: 60px;
+  }
+  .hero-image{
+    height: auto;
+    width: 500px;
+    transform: translateX(-30px);
+
+  }
+  .hero-details .title{
+    transform: translateX(8px);
+  }
+  .hero-details .buttons{
+    transform: translate(-4px);
+  }
 }
