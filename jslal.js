@@ -25,3 +25,22 @@ const swiper = new Swiper('.slider-wrapper', {
 
 });
 
+  const modal = document.getElementById("payment-modal");
+  const closetn = document.querySelector(".close-button");
+
+  document.querySelectorAll(".buy-button").forEach(button => {
+    button.addEventListener("click", function(e) {
+      e.preventDefault();
+      modal.style.display = "block";
+    });
+  });
+
+  closetn.addEventListener("click", function() {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", function(event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
